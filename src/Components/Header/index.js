@@ -5,7 +5,6 @@ import Logo from './chef.png';
 class Header extends Component {
     render() {
       return (
-        <div>
             <header>
                 <nav>
                     <div className='leftnav'> 
@@ -21,7 +20,6 @@ class Header extends Component {
                     </ul>
                 </nav>
             </header>
-        </div>
       );
     }
   }
