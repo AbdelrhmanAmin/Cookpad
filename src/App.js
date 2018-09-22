@@ -6,6 +6,7 @@ import Recipes from './Components/Recipes';
 import Data from './Components/Data/Recipes.json';
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
