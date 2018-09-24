@@ -44,6 +44,9 @@
 .description .media img{
     margin-bottom: -5px !important;
     margin: 0 10px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 .description .media p {
     font-size: 12px;

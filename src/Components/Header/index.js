@@ -26,15 +26,15 @@ class Header extends Component {
         return this.setState({ scrollPositionY })
       }
     render() {
-        const isScrolling = !!this.state.scrollPositionY
+        const isScrolling = !!this.state.scrollPositionY;
+        const {filterUpdate} = this.props;
       return (
             <header>
                 <nav>
                     <div className={(isScrolling) ? 'leftnav' : 'x'}> 
                         <img src={Logo}/>
                         <a href="#">cookpad</a>
-                        <input type="text" placeholder="Ingredient,name,dish..." />
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Ingredient,name,dish..." onChange={filterUpdate}/>
                     </div>
                     <ul>
                         <li><a href="#">Settings <i className="fa fa-cogs"></i></a></li>

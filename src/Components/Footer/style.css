@@ -1,0 +1,13 @@
+.flexer {
+    display: flex;
+    justify-content: space-around;
+}
+.flexer ul {
+    list-style-type: none;
+    margin-bottom: 150px;
+    margin-top:90px;
+}
+.flexer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
