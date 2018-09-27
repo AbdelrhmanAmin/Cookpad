@@ -4,3 +4,6 @@
   margin: 0;
   text-decoration: none;
 }
+.blured {
+  filter: blur(15px);
+}

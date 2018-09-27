@@ -1,0 +1,142 @@
+.form {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 40%;
+    top: 20%;
+    width: 100%;
+    height: 100%; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.form {
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: white;    
+    border-radius: 6px;
+    width: 330px;
+    margin: 30px auto;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    text-align: center;
+    
+}
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #fafaf5;
+    text-align: right;
+    margin-right: 20px;
+
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.top h1 {
+    color: #484432;
+    font-size: 18px;
+    padding: 25px;
+    border-bottom: 1px solid #dbdbce;
+    background-color: #fafaf5;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+}
+.mid {
+    position: relative;
+    padding: 15px;
+    margin: 10px 0;
+}
+.mid .fbBtn {
+    color: #ffffff;
+    background-color: #4863ae;
+    display: flex;
+    padding: 12px 12px;
+    line-height: 1.4;
+    border-radius: 4px;
+    border: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.mid  p {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 15px;
+}
+.mid .gBtn {
+    color: #ffffff;
+    background-color: #dd4b39;;
+    display: flex;
+    padding: 12px 12px;
+    line-height: 1.4;
+    border-radius: 4px;
+    align-items: center;
+    border: 0;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.hr{
+        overflow: hidden;
+        font-style: italic;
+        text-align: center;
+        color: #888;
+        font-weight: 600;
+    }
+    .hr:before,
+    .hr:after {
+        background-color: #C4BAB3;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 20%;
+}
+.hr:before {
+        right: 0.5em;
+        margin-left: -50%;
+}
+.hr:after {
+        left: 0.5em;
+        margin-right: -50%;
+}
+.bottom {
+    position: relative;
+    padding: 15px;
+    margin: 10px 0;
+}
+.bottom .mBtn {
+    color: #7b7769;
+    background-color: #e7e5df;
+    display: flex;
+    padding: 12px 12px;
+    line-height: 1.4;
+    border-radius: 4px;
+    border: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.bottom  p {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 15px;
+}
+.bottom p a {
+    text-decoration: underline;
+    color: #a3a090;
+}
+.bottom .terms {
+    color: #a3a090;
+    font-size: 0.75em;
+    margin-top: 10px;
+    text-align: center;
+}

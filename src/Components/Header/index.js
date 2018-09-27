@@ -27,7 +27,7 @@ class Header extends Component {
       }
     render() {
         const isScrolling = !!this.state.scrollPositionY;
-        const {filterUpdate} = this.props;
+        const {filterUpdate ,onBlur} = this.props;
       return (
             <header>
                 <nav>
@@ -39,7 +39,7 @@ class Header extends Component {
                     <ul>
                         <li><a href="#">Settings <i className="fa fa-cogs"></i></a></li>
                         <li><a href="#">Log in <i className="fa fa-sign-in"></i></a></li>
-                        <li><a href="#">Sign up <i className="fa fa-user"></i></a></li>
+                        <li onClick={onBlur}><a href="#">Sign up <i className="fa fa-user"></i></a></li>
                     </ul>
                 </nav>
             </header>

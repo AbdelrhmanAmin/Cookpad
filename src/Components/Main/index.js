@@ -13,15 +13,8 @@ class Main extends Component {
                         <h1>cookpad</h1>
                     </div>
                     <form className="searchbar">
-                        <input type="text" placeholder="🔍 Ingredient,name,dish..." onChange={e => filterUpdate(e)}/>                    </form>
-                    {/* <ul>
-                        <li onClick={e => filterUpdate(e)}><a>Chicken</a></li>
-                        <li onClick={e => filterUpdate(e)}><a>Rice</a></li>
-                        <li onClick={e => filterUpdate(e)}><a>oat</a></li>
-                        <li onClick={e => filterUpdate(e)}><a>Crock</a></li>
-                        <li className='border'><a href="#">salad</a></li>
-                        <li><a href="#">categories</a></li>
-                    </ul> */}
+                        <input type="text" placeholder="🔍 Ingredient,name,dish..." onChange={e => filterUpdate(e)}/>                    
+                    </form>
                     <button className='recipe'><i class="fa fa-edit"></i> Create Recipe</button>
                 </section>
             </main>
