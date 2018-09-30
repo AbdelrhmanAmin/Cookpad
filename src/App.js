@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router,Link,Prompt} from 'react-router-dom';
+import {BrowserRouter as Router,Link,Prompt,Switch} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Header from './Components/Header';
 import Main from './Components/Main';
@@ -8,6 +8,7 @@ import Recipes from './Components/Recipes';
 import Footer from './Components/Footer';
 import Modal from './Components/Modal';
 import Login from './Components/Login';
+import RecipePage from './Components/RecipePage';
 import Data from './Components/Data/Recipes.json';
 
 class App extends Component {
@@ -49,18 +50,33 @@ class App extends Component {
     const blur = this.state.isBlured ? 'blured' : null;
     return (
       <Router>
-          <div className="App">
-            <Prompt when={this.state.isLogin,this.state.isS}
-            message='Do you want to login ?' />
-          <Modal isSign={this.state.isSign} onSign={this.onSign} onLogin={this.onLogin} onCancel={this.onCancel}/>
-          <Login isLogin={this.state.isLogin} onLogin={this.onLogin} onSign={this.onSign} onCancel={this.onCancel}/>
-          <div className={blur}>
-          <Header filterUpdate={this.filterUpdate} onSign={this.onSign} onLogin={this.onLogin}/>
-          <Main filterUpdate={this.filterUpdate} />
-          <Recipes Recipes={Data} filteredRecipe={this.state.filteredRecipe}/>
-          <Footer />
+        <Switch>
+        <Route path='/home' exact render={
+          () => {
+            return(
+              <div className="App">
+              <Prompt when={this.state.isLogin,this.state.isS}
+              message='Do you want to login ?' />
+            <Modal isSign={this.state.isSign} onSign={this.onSign} onLogin={this.onLogin} onCancel={this.onCancel}/>
+            <Login isLogin={this.state.isLogin} onLogin={this.onLogin} onSign={this.onSign} onCancel={this.onCancel}/>
+            <div className={blur}>
+            <Header filterUpdate={this.filterUpdate} onSign={this.onSign} onLogin={this.onLogin}/>
+            <Main filterUpdate={this.filterUpdate} />
+            <Recipes Recipes={Data} filteredRecipe={this.state.filteredRecipe}/>
+            <Footer />
+            </div>
           </div>
-        </div>
+            )
+          }
+        } />
+        <Route path='/recipe' exact render={
+          ()=>{
+            return(
+              <RecipePage />
+            )
+          }
+        } />
+        </Switch>
       </Router>
     );
   }
