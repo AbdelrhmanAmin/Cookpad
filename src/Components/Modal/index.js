@@ -8,7 +8,7 @@ class Modal extends Component {
             <div>
                 <section className='form' style={style}>
                     <div className='top'>
-                    <span className="close" onClick={this.props.onSign}>&times;</span>
+                    <span className="close" onClick={this.props.onCancel}>&times;</span>
                         <h1>Sign up with Cookpad</h1>
                     </div>
                     <div className='mid'>
