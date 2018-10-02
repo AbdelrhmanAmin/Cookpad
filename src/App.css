@@ -4,9 +4,3 @@
   margin: 0;
   text-decoration: none;
 }
-.blured {
-  filter: blur(15px);
-  opacity: 0.2;
-  display: none;
-  background: rgba(90, 90, 90, 0.5);
-}
