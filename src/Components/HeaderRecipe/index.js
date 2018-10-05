@@ -10,13 +10,10 @@ class HeaderRecipe extends Component {
                 <nav>
                     <div className='leftnav'> 
                         <img src={Logo}/>
-                        <a href="#">cookpad</a>
-                        <input type="text" placeholder="Ingredient,name,dish..." onChange={filterUpdate}/>
+                        <a href="/"><span>cookpad</span></a>
                     </div>
                     <ul>
-                        <li><a href="#">Settings <i className="fa fa-cogs"></i></a></li>
-                        <li><a href="#" onClick={onLogin}>Log in <i className="fa fa-sign-in"></i></a></li>
-                        <li><a href="#" onClick={onSign}>Sign up <i className="fa fa-user"></i></a></li>
+                        <li><a href="#">Settings <i className="fa fa-cogs"></i></a></li>                    
                     </ul>
                 </nav>
             </header>

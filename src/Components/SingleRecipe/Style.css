@@ -1,0 +1,38 @@
+.container-recipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px;
+    text-align: end;
+}
+.recipeURL {
+    width: 650px;
+    height: 450px;
+    margin: 20px;
+}
+.container-recipe h1 {
+    color: #8bad00;
+}
+.container-recipe p {
+    text-align: left
+}
+.container-recipe h3 {
+    color: #ccc9bc;
+}
+.chef-recipe {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+.chef-recipe p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.chef-recipe img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+.container-recipe ul{
+    align-self: flex-start;
+}

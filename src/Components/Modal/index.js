@@ -3,7 +3,7 @@ import './style.css';
 
 class Modal extends Component {
     render() {
-        const style = this.props.isSign ? {display: 'block'}: null;
+        const style = this.props.isSign ? {display: 'block'} : null;
         return(
             <div>
                 <section className='form' style={style}>

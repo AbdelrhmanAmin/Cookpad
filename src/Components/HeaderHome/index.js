@@ -33,7 +33,7 @@ class Header extends Component {
                 <nav>
                     <div className={(isScrolling) ? 'leftnav' : 'x'}> 
                         <img src={Logo}/>
-                        <a href="#">cookpad</a>
+                        <a href="/">cookpad</a>
                         <input type="text" placeholder="Ingredient,name,dish..." onChange={filterUpdate}/>
                     </div>
                     <ul>

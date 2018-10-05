@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import HeaderRecipe from '../../Components/HeaderRecipe';
+import HeaderHome from '../../Components/HeaderHome';
 import Main from '../../Components/Main';
 import Footer from '../../Components/Footer';
 import Modal from '../../Components/Modal';
@@ -42,15 +43,15 @@ class Home extends Component {
     })
   }
     render() {
+      const {isBlured,isLogin,isSign,filteredRecipe} = this.state;
+      const {onCancel,onLogin,onSign,filterUpdate} = this;
         const blur = isBlured ? 'blured' : null;
-        const {isBlured,isLogin,isSign,filteredRecipe} = this.state;
-        const {onCancel,onLogin,onSign,filterUpdate} = this.props;
         return (
                 <div>
                     <Modal isSign={isSign} onSign={onSign} onLogin={onLogin} onCancel={onCancel}/>
                     <Login isLogin={isLogin} onLogin={onLogin} onSign={onSign} onCancel={onCancel}/>
                     <div className={blur}>
-                        <HeaderRecipe filterUpdate={filterUpdate} onSign={onSign} onLogin={onLogin}/>
+                        <HeaderHome filterUpdate={filterUpdate} onSign={onSign} onLogin={onLogin}/>
                         <Main filterUpdate={filterUpdate} />
                         <RecipeList filteredRecipe={filteredRecipe}/>
                         <Footer />

@@ -28,7 +28,7 @@ nav {
     float: left;
     margin-left: 10px;
 }
-.leftnav a {
+.leftnav a span{
     font-family: 'Teko', sans-serif;
     font-size: 24px;
     font-weight: 900;
@@ -36,15 +36,10 @@ nav {
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 5px 0 5px;
+    position: absolute;
+    padding: 12px 11px;
 }
-.leftnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    font-weight: 100;
-    border: 2px solid #E3E3DE;
-}
+
 .leftnav button {
     padding: 8px 10px;
     margin-top: 8px;
@@ -53,8 +48,6 @@ nav {
     border: none;
     cursor: pointer;
   }
-
-/* USE MEDIA QUERY FOR SCROLL */
 header nav ul {
     display: block;
 }

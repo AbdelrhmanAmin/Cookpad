@@ -1,0 +1,121 @@
+.comment-recipe {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  z-index: 2;
+}
+.comment-recipe  nav {
+  position: relative;
+  margin-bottom: 50px;
+  /* width: 100%; */
+}
+.btnright {
+  float: right;
+  position: relative;
+  top: 30%;
+}
+.btnright li {
+  display: inline;
+  margin-right: 20px;
+}
+.inputleft {
+  float:left;
+}
+.inputleft input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  font-weight: 100;
+  border: 2px solid #E3E3DE;
+}
+.fa {
+  transition: 0.3s ease-in-out all;
+}
+.fa:hover {
+  color: #8bad00;
+}
+.tip {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #ccc;
+  }
+  
+  .tip-up {
+    top: -25px; /* Same as body margin top + border */
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  
+  .tip-down {
+    bottom: -25px;
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;  
+  }
+  
+  .tip-left {
+    top: 10px;
+    left: -25px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;  
+  }
+  
+  .tip-right {
+    top: 10px;
+    right: -25px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;  
+  }
+  
+  .dialogbox .body {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 10px;
+    padding: 5px;
+    background-color: #DADADA;
+    border-radius: 3px;
+    border: 5px solid #ccc;
+    left: 38%;
+  }
+  
+  .body .message {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #797979;
+  }
+  .myButton {
+    background-color:#44c767;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding: 7px 16px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+  }
+  .myButton:hover {
+    background-color:#5cbf2a;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  .marked1 {
+    color: yellow;
+  }
+  .marked2 {
+    color: red;
+  }

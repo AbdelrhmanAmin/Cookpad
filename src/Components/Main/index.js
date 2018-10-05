@@ -3,7 +3,7 @@ import './Style.css';
 import Logo from './chef.png';
 class Main extends Component {
     render() {
-         const { filterUpdate,filterRecipe } = this.props;
+         const { filterUpdate } = this.props;
       return (
         <div>
             <main>

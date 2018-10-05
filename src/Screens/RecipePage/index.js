@@ -7,14 +7,16 @@ import Modal from '../../Components/Modal';
 import Login from '../../Components/Login';
 import RecipeList from '../../Components/RecipeList';
 import SingleRecipe from '../../Components/SingleRecipe';
+import Comment from '../../Components/Comment';
 
 class RecipePage extends Component{
     render() {
         return(
             <div>
                 <HeaderRecipe />
-                <Footer />
                 <SingleRecipe />
+                <Comment />
+                <Footer />
             </div>
         );
     }

@@ -16,7 +16,7 @@ class App extends Component {
                 <Home />
               )
             }} />
-            <Route path='/recipe' exact render={() => {
+            <Route path='/recipe/:id' exact render={() => {
               return (
                 <RecipePage />
               )

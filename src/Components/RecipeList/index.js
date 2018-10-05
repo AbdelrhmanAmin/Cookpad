@@ -16,7 +16,7 @@ class RecipeList extends Component {
                     <span className='cooked'>cooked</span>
                 </div>
                 <div className="Recipe">
-                        <a href="#">
+                        <a href="/recipe/1">
                         <img src={recipe.imageURL} className='recipe-img'/>
                             <div className="recipe-name">
                                 <h2>{recipe.name}</h2>
