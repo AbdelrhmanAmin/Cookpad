@@ -15,7 +15,7 @@ class Main extends Component {
                     <form className="searchbar">
                         <input type="text" placeholder="🔍 Ingredient,name,dish..." onChange={e => filterUpdate(e)}/>                    
                     </form>
-                    <button className='recipe'><i class="fa fa-edit"></i> Create Recipe</button>
+                    <a href="/create/"><button className='recipe'><i class="fa fa-edit"></i> Create Recipe</button></a>
                 </section>
             </main>
         </div>
