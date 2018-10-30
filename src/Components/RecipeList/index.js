@@ -3,6 +3,13 @@ import './Style.css';
 import Recipes from '../../Components/Data/Recipes.json';
 
 class RecipeList extends Component {
+    state = {
+        addRecipe: []
+    }
+    componentWillMount = () => { 
+        let getter = JSON.parse(localStorage.getItem('newRecipe'));
+         this.setState({ addRecipe: getter}) 
+        }
     render(){
             const {filteredRecipe} = this.props;
             const recipe = Recipes
@@ -34,13 +41,20 @@ class RecipeList extends Component {
                         </ul>
                     </div>
                 </div>
-            </div>
-
-            )
+            </div>)
+            const newer = this.state.addRecipe.filter((story,title) => {
+                (
+                    <div>
+                        <h1>{title} </h1>
+                        <p>{story}</p>
+                    </div>
+                )
+            })
         return(
             <div className='container'>
                 <div className="flex">
                 {recipe}
+                {newer}
                 </div>
             </div>
         )

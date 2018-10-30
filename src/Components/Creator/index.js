@@ -53,8 +53,6 @@ class Creator extends Component {
             'steps': this.state.recipestory,
             'name': this.state.recipetitle
         };
-        const rare = JSON.stringify(newRecipe);
-        Recipes.push(rare);
         localStorage.setItem('newRecipe', JSON.stringify(newRecipe))
     }
     render(){
