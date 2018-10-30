@@ -62,3 +62,6 @@ header nav ul li a {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }
+.R-nav{
+    position: absolute !important;
+}

@@ -55,7 +55,9 @@
     margin-left: 20px;
     font-size: 24px;
 }
-
+.c-m-story {
+    font-size: 16px !important;
+}
 .c-m-title::placeholder {
     font-size: 30px;
     cursor: text;
@@ -63,7 +65,7 @@
     font-weight: 700;
 }
 .c-m-story::placeholder {
-    font-size: 19px;
+    font-size: 12px;
     cursor: text;
     color: #d2d2d2;
 }

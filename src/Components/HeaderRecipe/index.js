@@ -7,7 +7,7 @@ class HeaderRecipe extends Component {
         const {filterUpdate ,onSign, onLogin} = this.props;
       return (
             <header>
-                <nav>
+                <nav className='R-nav'>
                     <div className='leftnav'> 
                         <img src={Logo}/>
                         <a href="/"><span>cookpad</span></a>
